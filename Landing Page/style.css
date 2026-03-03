@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: #d39a9a;
+}
+
+.left {
+  width: 40%;
+  padding: 40px;
+  color: white;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin-left: 30px;
+}
+
+.poster {
+  width: 250px;
+  justify-self: center;
+  align-self: center;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+}
+
+.meta {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.volumes{
+    position: absolute;
+    display: flex;
+    left: 75px;
+}
+
+.desc{
+    position: absolute;
+    display: flex;
+    left: 220px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scroll .line {
+  width: 80px;
+  height: 1px;
+  background: white;
+}
+
+.scroll div {
+  width: 80px;
+  height: 1px;
+  background: white;
+}
+
+.center {
+  width: 50%;
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  left: -140px;
+  top: 42%;
+  color: white;
+}
+
+.title h2 {
+  font-size: 92px;
+  font-weight: 300;
+  line-height: 0.95;
+}
+
+.title p {
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+
+.mini {
+  position: absolute;
+  bottom: 50px;
+  right: -90px;
+  width: 210px;
+  height: 200px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+
+.right {
+  width: 10%;
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: rotate(90deg);
+  display: flex;
+  gap: 30px;
+  color: white;
+}
